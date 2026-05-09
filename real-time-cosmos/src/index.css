@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 230 25% 5%;
+    --foreground: 220 20% 92%;
+    --card: 230 25% 8%;
+    --card-foreground: 220 20% 92%;
+    --popover: 230 25% 8%;
+    --popover-foreground: 220 20% 92%;
+    --primary: 220 80% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 260 40% 20%;
+    --secondary-foreground: 260 30% 85%;
+    --muted: 230 20% 14%;
+    --muted-foreground: 220 15% 55%;
+    --accent: 280 60% 55%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 230 20% 16%;
+    --input: 230 20% 16%;
+    --ring: 220 80% 60%;
+    --chart-1: 220 80% 60%;
+    --chart-2: 280 60% 55%;
+    --chart-3: 180 60% 50%;
+    --chart-4: 40 80% 60%;
+    --chart-5: 340 70% 55%;
+    --radius: 0.75rem;
+    --sidebar-background: 230 25% 7%;
+    --sidebar-foreground: 220 20% 92%;
+    --sidebar-primary: 220 80% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 230 20% 14%;
+    --sidebar-accent-foreground: 220 20% 92%;
+    --sidebar-border: 230 20% 16%;
+    --sidebar-ring: 220 80% 60%;
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  .dark {
+    --background: 230 25% 5%;
+    --foreground: 220 20% 92%;
+    --card: 230 25% 8%;
+    --card-foreground: 220 20% 92%;
+    --popover: 230 25% 8%;
+    --popover-foreground: 220 20% 92%;
+    --primary: 220 80% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 260 40% 20%;
+    --secondary-foreground: 260 30% 85%;
+    --muted: 230 20% 14%;
+    --muted-foreground: 220 15% 55%;
+    --accent: 280 60% 55%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 230 20% 16%;
+    --input: 230 20% 16%;
+    --ring: 220 80% 60%;
+    --chart-1: 220 80% 60%;
+    --chart-2: 280 60% 55%;
+    --chart-3: 180 60% 50%;
+    --chart-4: 40 80% 60%;
+    --chart-5: 340 70% 55%;
+    --sidebar-background: 230 25% 7%;
+    --sidebar-foreground: 220 20% 92%;
+    --sidebar-primary: 220 80% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 230 20% 14%;
+    --sidebar-accent-foreground: 220 20% 92%;
+    --sidebar-border: 230 20% 16%;
+    --sidebar-ring: 220 80% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
